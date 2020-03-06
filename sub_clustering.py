@@ -16,7 +16,7 @@ rdd.persist(StorageLevel.MEMORY_ONLY)
 
 for clusters in range(1,30):
     model = KMeans.train(rdd, clusters)
-    print clusters, model.computeCost(rdd3)
+    print clusters, model.computeCost(rdd)
 
 
 for trials in range(10): # Try ten times to find best result
